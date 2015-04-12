@@ -12,10 +12,12 @@ $post-main-offset: $post-rank-width + $post-votes-width;
 
 .post__rank {
   position: absolute;
-  top: 0;
+  top: 23px;
   left: 0;
   width: $post-rank-width;
   text-align: center;
+  font-weight: 600;
+
 }
 
 .post__votes {
@@ -24,6 +26,12 @@ $post-main-offset: $post-rank-width + $post-votes-width;
   left: $post-rank-width;
   width: $post-votes-width;
   text-align: center;
+  font-weight: 600;
+
+}
+
+.post__votes__score {
+  padding-bottom: 5px;
 }
 
 .post__main {
@@ -36,7 +44,8 @@ $post-main-offset: $post-rank-width + $post-votes-width;
 
 .post__title {
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.4;
+  font-weight: 600;
   a {
     &:visited {
       color: lighten($primary-color, 40%);
@@ -62,16 +71,27 @@ body {
   max-width: 100%;
 }
 
-.row.full {
+.primary {
   background-color: $primary-color;
 }
 
-.nav-bar {
+.white {
+  background-color: white;
+}
+
+.nav__main {
   height: 40px;
-  padding: 0 20px;
+  background-color: $primary-color;
 
   a {
     color: white;
   }
 }
 
+.nav__sub {
+  height: 30px;
+  background-color: white;
+  color: $primary-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
