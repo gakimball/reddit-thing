@@ -28,7 +28,6 @@
 
 .first, .second, .third, .fourth{
   float: left;
-  padding: 10px;
   // background-color: $smoke;
   height: 100%;
 }
@@ -65,4 +64,21 @@
 
 .bottom-section {
   padding-top: 0;
+}
+
+.post-rank {
+  background-color: $iron;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: white;
+}
+
+.score {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.thumb {
+  padding: 10px;
 }
