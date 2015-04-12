@@ -1,7 +1,8 @@
 export default Ember.Component.extend({
   classNames: ['post'],
   hasThumbnail: function() {
-    return typeof this.get('data').thumbnail === 'string';
+    var thumb = this.get('data').thumbnail;
+    return thumb.length > 0;
   }.property('data.thumbnail'),
   isNsfw: function() {
     return this.get('data').thumbnail === 'nsfw';
