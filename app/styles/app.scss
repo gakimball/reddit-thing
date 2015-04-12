@@ -2,6 +2,50 @@
 
 @import "foundation";
 
+$post-rank-width: 25px;
+$post-votes-width: 75px;
+$post-main-offset: $post-rank-width + $post-votes-width;
+
+.post {
+  position: relative;
+}
+
+.post__rank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $post-rank-width;
+  text-align: center;
+}
+
+.post__votes {
+  position: absolute;
+  top: 0;
+  left: $post-rank-width;
+  width: $post-votes-width;
+  text-align: center;
+}
+
+.post__main {
+  padding-left: $post-main-offset;
+}
+
+.post__meta {
+
+}
+
+.post__title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.post__text {
+  &:first-child {
+    width: 100%;
+  }
+}
+
+
 .score, .comments, .post-rank, .bottom-section {
   font-family: $font-family-sans-serif;
 }
