@@ -1,4 +1,4 @@
-<div class="post row">
+<!-- <div class="post row">
   <div class="medium-4 large-2 columns">
     <img src="{{data.thumbnail}}" alt="" class="post__thumbnail">
   </div>
@@ -9,4 +9,66 @@
       | {{data.subreddit}}
     </div>
   </div>
+</div> -->
+
+<div class="row collapse">
+  <div class="small-12 medium-10 clearfix column small-centered">
+    <div class="post">
+
+      <div class="first">
+       <p class="post-rank vert-center">1</p> 
+     </div>
+
+     <div class="votes second">
+       <div class="vert-center">
+         <div class="upvote">up</div>
+         <h3>{{data.score}}</h3>
+         <div class="downvote">down</div>
+       </div>
+     </div>
+
+     <div class="thumb-section third">
+      <a href="{{data.url}}">
+        <img class="thumb vert-center" src="{{data.thumbnail}}" alt="thumb">
+      </a>
+    </div>
+
+    <a href="{{data.url}}">
+    <div class="post-details fourth">
+      <div class="vert-center">
+      <h5 class="post-title">{{data.title}}</h5>
+
+      </div>
+    </div>
+    </a>
+  </div>
 </div>
+</div>
+
+<div class="row collapse">
+  <div class="small-12 medium-10 clearfix column small-centered">
+    <div class="third bottom-section empty">
+      <p><a href="#">{{data.num_comments}} comments</a></p>
+    </div>
+    <div class="fourth bottom-section">
+      <div class="row collapse">
+        <div class="small-3 columns">
+          <a href="#">({{data.domain}})</a>
+        </div> 
+        <div class="small-3 columns">
+          <a href="">3hrs ago</a>
+        </div> 
+        <div class="small-3 columns">
+          <a href="#">by username</a>
+        </div> 
+        <div class="small-3 columns">
+          <a href="#">in r/{{data.subreddit}}</a>
+        </div>              
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{{outlet}}
