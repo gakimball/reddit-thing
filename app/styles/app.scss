@@ -2,6 +2,66 @@
 
 @import "foundation";
 
-body {
-  background: #333;
+
+.full {
+  max-width: 100%;
+}
+
+.row.full {
+  background-color: $primary-color;
+}
+
+.nav-bar {
+  height: 40px;
+  padding: 0 20px;
+
+  a {
+    color: white;
+  }
+}
+
+.post {
+  height: 150px;
+  padding-bottom: 0;
+}
+
+.first, .second, .third, .fourth{
+  float: left;
+  padding: 10px;
+  // background-color: $smoke;
+  height: 100%;
+}
+
+.third.empty {
+  margin-left: 15%;
+}
+
+.first {
+  width: 5%;
+  text-align: center;
+}
+
+.vert-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.second {
+  width: 10%;
+  text-align: center;
+
+}
+
+.third {
+  width: 15%;
+  text-align: center;
+}
+
+.fourth {
+  width: 70%;
+}
+
+.bottom-section {
+  padding-top: 0;
 }
