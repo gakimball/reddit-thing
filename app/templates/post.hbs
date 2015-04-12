@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="small-12 columns">
+    {{post-item data=model.post}}
+
+    <hr>
+
+    {{#each comment in model.comments}}
+    <div class="comment">
+      <div class="comment__meta">
+        <a href="#" class="comment__meta__author">{{comment.data.author}}</a>
+        <span class="comment__meta__score">{{comment.data.score}} points</span>
+        <time class="comment__meta__date">{{comment.data.created}}</time>
+      </div>
+      {{comment.data.body}}
+    </div>
+    {{/each}}
+  </div>
+</div>
