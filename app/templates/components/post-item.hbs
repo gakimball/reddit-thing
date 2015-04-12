@@ -1,73 +1,62 @@
-<div class="row">
-  <div class="small-12 medium-10 clearfix column small-centered">
-    <div class="post">
+ <div class="row">
+   <div class="small-12 medium-10 clearfix column small-centered">
+    <!-- left section -->
 
-      <div class="first">
-       <p class="post-rank vert-center">{{index}}</p> 
+    <div class="left-section">
+      <div class="rank text-center left">
+        <p class="post-rank">1</p> 
+      </div>
+
+      <div class="votes right text-center">
+        <div class="upvote"><a href="#"><svg version="1.1" x="0px" y="0px" width="17px" height="16.5px" viewBox="0 0 17 16.5">
+         <path fill="#EF8C3A" d="M16.9,8.1l-8-8C8.7,0,8.3,0,8.1,0.1l-8,8C-0.2,8.5,0.1,9,0.5,9h3.7c0.3,0,0.5,0.2,0.5,0.5V16
+         c0,0.3,0.2,0.5,0.5,0.5h6.6c0.3,0,0.5-0.2,0.5-0.5V9.5c0-0.3,0.2-0.5,0.5-0.5h3.7C16.9,9,17.2,8.5,16.9,8.1z"/></svg></a></div>
+
+         <h3 class="score">123</h3>
+
+         <div class="downvote"><a href="#"><svg version="1.1" x="0px" y="0px" width="17px" height="16.5px" viewBox="0 0 17 16.5">
+           <path fill="#3B71D1" d="M0.1,8.4l8,8c0.2,0.2,0.5,0.2,0.7,0l8-8c0.3-0.3,0.1-0.9-0.4-0.9h-3.7c-0.3,0-0.5-0.2-0.5-0.5V0.5
+           c0-0.3-0.2-0.5-0.5-0.5L5.2,0C4.9,0,4.7,0.2,4.7,0.5V7c0,0.3-0.2,0.5-0.5,0.5H0.5C0.1,7.5-0.2,8.1,0.1,8.4z"/></svg></a></div>
+         </div>
+
+       </div>
+
+       <!-- right section-->
+       <div class="offset-pad">
+
+         <div class="thumb">
+           <img src="{{data.thumbnail}}" alt="">
+         </div>
+
+         <div class="post-details absolutely">
+           <div class="">
+             <h3 class="post-title">
+               <a href="{{data.url}}" target="_blank">{{data.title}}</a>
+               </h3>
+             </div>
+           </div>
+
+         <div class="bottom-section">
+           <div class="row collapse">
+             <div class="small-3 columns">
+               <a href="#">({{data.domain}})</a>
+             </div> 
+             <div class="small-3 columns">
+               <p>3hrs ago</p>
+             </div> 
+             <div class="small-3 columns">
+               <p>by <a href="#">username</a></p>
+             </div> 
+             <div class="small-3 columns">
+               <p>in <a href="#">r/{{data.subreddit}}</a></p>
+             </div>              
+           </div>
+
+         </div>
+
+       </div>
      </div>
+   </div>
 
-     <div class="votes second">
-       <div class="vert-center">
-         <div class="upvote">
-          
-          <a href="#">
-            <svg version="1.1" x="0px" y="0px" width="17px" height="16.5px" viewBox="0 0 17 16.5">
-              <path fill="#EF8C3A" d="M16.9,8.1l-8-8C8.7,0,8.3,0,8.1,0.1l-8,8C-0.2,8.5,0.1,9,0.5,9h3.7c0.3,0,0.5,0.2,0.5,0.5V16
-              c0,0.3,0.2,0.5,0.5,0.5h6.6c0.3,0,0.5-0.2,0.5-0.5V9.5c0-0.3,0.2-0.5,0.5-0.5h3.7C16.9,9,17.2,8.5,16.9,8.1z"/>
-            </svg>
-          </a>
-          
-        </div>
-        <h3 class="score">{{data.score}}</h3>
-        <div class="downvote">
-          <a href="#">
-            <svg version="1.1" x="0px" y="0px" width="17px" height="16.5px" viewBox="0 0 17 16.5">
-              <path fill="#3B71D1" d="M0.1,8.4l8,8c0.2,0.2,0.5,0.2,0.7,0l8-8c0.3-0.3,0.1-0.9-0.4-0.9h-3.7c-0.3,0-0.5-0.2-0.5-0.5V0.5
-              c0-0.3-0.2-0.5-0.5-0.5L5.2,0C4.9,0,4.7,0.2,4.7,0.5V7c0,0.3-0.2,0.5-0.5,0.5H0.5C0.1,7.5-0.2,8.1,0.1,8.4z"/>
-            </svg>
-          </a>
 
-        </div>
-      </div>
-    </div>
-
-    <div class="thumb-section third">
-      <a href="{{data.url}}" target="_blank">
-        <img class="thumb vert-center" src="{{data.thumbnail}}" alt="thumb">
-      </a>
-    </div>
-
-    <a href="{{data.url}}" target="_blank">
-      <div class="post-details fourth">
-        <div class="vert-center">
-          <h5 class="post-title">{{data.title}}</h5>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-</div>
-
-<div class="row collapse">
-  <div class="small-12 medium-10 clearfix column small-centered">
-    <div class="third bottom-section empty">
-      <p><a href="#">{{data.num_comments}} comments</a></p>
-    </div>
-    <div class="fourth bottom-section">
-      <div class="row collapse">
-        <div class="small-3 columns">
-          <a href="#">({{data.domain}})</a>
-        </div> 
-        <div class="small-3 columns">
-          <p>3hrs ago</p>
-        </div> 
-        <div class="small-3 columns">
-          <p>by <a href="#">username</a></p>
-        </div> 
-        <div class="small-3 columns">
-          <p>in <a href="#">r/{{data.subreddit}}</a></p>
-        </div>              
-      </div>
-    </div>
-  </div>
-</div>
+   {{outlet}}

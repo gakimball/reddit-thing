@@ -2,7 +2,13 @@
 
 @import "foundation";
 
+.score, .comments, .post-rank, .bottom-section {
+  font-family: $font-family-sans-serif;
+}
 
+body {
+  background-color: $secondary-color;
+}
 
 .full {
   max-width: 100%;
@@ -26,20 +32,6 @@
   padding-bottom: 0;
 }
 
-.first, .second, .third, .fourth{
-  float: left;
-  // background-color: $smoke;
-  height: 100%;
-}
-
-.third.empty {
-  margin-left: 15%;
-}
-
-.first {
-  width: 5%;
-  text-align: center;
-}
 
 .vert-center {
   position: relative;
@@ -47,23 +39,10 @@
   transform: translateY(-50%);
 }
 
-.second {
-  width: 10%;
-  text-align: center;
-
-}
-
-.third {
-  width: 15%;
-  text-align: center;
-}
-
-.fourth {
-  width: 70%;
-}
 
 .bottom-section {
   padding-top: 0;
+  clear: both;
 }
 
 .post-rank {
@@ -72,6 +51,13 @@
   height: 25px;
   width: 25px;
   color: white;
+  top: 40px;
+  position: relative;
+}
+
+.votes {
+  position: relative;
+  top: 10px;
 }
 
 .score {
@@ -81,4 +67,29 @@
 
 .thumb {
   padding: 10px;
+  width: 150px;
 }
+
+.thumb-wrapper {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+.left-section {
+  width: 120px;
+  position: absolute;
+}
+.offset-pad {
+  padding-left: 120px;
+}
+
+.thumb, .post-details {
+  width: 50%;
+  float: left;
+}
+
+// .post:not(:first-of-type) {
+//   display: none;
+// }
