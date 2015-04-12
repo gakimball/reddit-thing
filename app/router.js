@@ -6,5 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.route('post', { path: '/post/:subreddit/:id' })
+  this.route('post', { path: '/post/:subreddit/:id' });
+  this.route('login', { path: '/login' });
+  this.route('auth', { path: '/auth' });
 });

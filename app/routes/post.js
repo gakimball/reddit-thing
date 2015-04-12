@@ -5,7 +5,7 @@ export default Ember.Route.extend({
       return {
         post: data[0].data.children[0].data,
         comments: data[1].data.children
-      }
-    })
+      };
+    });
   }
-})
+});

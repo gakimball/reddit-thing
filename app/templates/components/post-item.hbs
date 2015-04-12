@@ -21,6 +21,7 @@
 
        </div>
 
+<<<<<<< HEAD
        <!-- right section-->
        <div class="offset-pad">
 
@@ -60,3 +61,28 @@
 
 
    {{outlet}}
+=======
+<div class="row collapse">
+  <div class="small-12 medium-10 clearfix column small-centered">
+    <div class="third bottom-section empty">
+      <p>{{#link-to 'post' data.subreddit data.id}}{{data.num_comments}} comments{{/link-to}}</p>
+    </div>
+    <div class="fourth bottom-section">
+      <div class="row collapse">
+        <div class="small-3 columns">
+          <a href="#">({{data.domain}})</a>
+        </div> 
+        <div class="small-3 columns">
+          <p>3hrs ago</p>
+        </div> 
+        <div class="small-3 columns">
+          <p>by <a href="#">username</a></p>
+        </div> 
+        <div class="small-3 columns">
+          <p>in <a href="#">r/{{data.subreddit}}</a></p>
+        </div>              
+      </div>
+    </div>
+  </div>
+</div>
+>>>>>>> 26d8d6b5646955f7e66eb844a0c83bd9bd39b167
