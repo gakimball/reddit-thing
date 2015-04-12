@@ -51,7 +51,7 @@
 <div class="row collapse">
   <div class="small-12 medium-10 clearfix column small-centered">
     <div class="third bottom-section empty">
-      <p><a href="#">{{data.num_comments}} comments</a></p>
+      <p>{{#link-to 'post' data.subreddit data.id}}{{data.num_comments}} comments{{/link-to}}</p>
     </div>
     <div class="fourth bottom-section">
       <div class="row collapse">
