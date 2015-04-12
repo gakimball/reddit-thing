@@ -29,21 +29,18 @@
     </div>
   {{/if}}
   <div class="small-10 columns post__text">
-    <p class="post__title"><a href="{{data.url}}" target="_blank">{{data.title}}</a></p>
+    <p class="post__title">
+      <a href="{{data.url}}">{{data.title}}</a>
+      <small><a href="{{data.url}}">({{data.domain}})</a></small>
+    </p>
 
-    <div class="post__meta row">
-      <div class="small-3 columns">
-        <a href="#">({{data.domain}})</a>
-      </div> 
-      <div class="small-3 columns">
+    <ul class="inline-list post__meta row">
+      <li>
         <p>3hrs ago</p>
-      </div> 
-      <div class="small-3 columns">
-        <p>by<a href="#">username</a></p>
-      </div> 
-      <div class="small-3 columns">
+      </li>
+      <li>
         <p>in {{#link-to 'post' data.subreddit data.id}}r/{{data.subreddit}}{{/link-to}}</p>
-      </div> 
-    </div>
+      </li>
+    </ul>
   </div>
 </div>
